@@ -1,0 +1,30 @@
+
+.card{
+    border: 1px solid;
+    display: flex;
+    grid-template-columns: 
+    repeat(auto-fit), minmax(180px, 1fr);
+    justify-content: space-evenly;
+    height: 250px;
+    margin: 15px;
+    border-radius: 3%;
+    overflow: hidden;
+    box-shadow: 5px 2px 2px black;
+    columns: 200px 4;
+    column-gap: 30px;
+    color: black;
+}
+.card_img{
+    display: flex;
+}
+
+.card_img > img {
+    width: 100%;
+}
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 767px) and (max-width: 1023){
+
+}
+
