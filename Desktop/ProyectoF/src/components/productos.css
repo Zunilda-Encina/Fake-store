@@ -1,0 +1,15 @@
+h2{
+    color: gray;
+}
+.card_img{
+    display: flex;
+    justify-content: space-between;
+
+}
+img{
+    width: 200px;
+    height: 250px;
+    border: 1px solid salmon;
+    object-fit: cover;
+    margin-right: 10px;
+}

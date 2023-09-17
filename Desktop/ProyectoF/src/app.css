@@ -1,0 +1,18 @@
+
+.card{
+    border: 1px solid;
+    display: flex;
+    grid-template-columns: 
+    repeat(auto-fit), minmax(180px, 1fr);
+    margin: 15px;
+    column-gap: 30px;
+    color: black;
+}
+
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 767px) and (max-width: 1023){
+
+}
+
