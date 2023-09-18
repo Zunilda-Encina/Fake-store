@@ -1,14 +1,21 @@
-
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
 .card{
     border: 1px solid;
     display: flex;
-    grid-template-columns: 
-    repeat(auto-fit), minmax(180px, 1fr);
     margin: 15px;
     column-gap: 30px;
     color: black;
+    box-shadow: 5px 5px #07060752;
+    cursor: pointer;
 }
-
+.card:hover{
+   background-color: rgba(0, 238, 255, 0.336);
+}
 @media screen and (max-width: 767px){
 
 }
