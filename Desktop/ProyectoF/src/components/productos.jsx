@@ -13,7 +13,7 @@ const info = ({title, price, category, description, image}) =>{
      {
         return (
           <div className='card'>
-                <img className='card_img' src={image} alt='{title}'/>
+          <img className='card_img' src={image} alt={title} />
               <div className='card_data'>
                 <h2 className='box'>{title}</h2>
                 <h3 className='box'>{price}</h3>
@@ -23,7 +23,7 @@ const info = ({title, price, category, description, image}) =>{
             ( <button onClick={toggleDescription}>Más Info</button> )}
               </div>
           </div>
-        )
+          )
       }
 }
 

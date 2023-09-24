@@ -1,6 +1,8 @@
-import { useEffect, useState } from 'react'
-import Info from './components/productos'
-import './app.css'
+import { useEffect, useState } from 'react';
+import Info from './productos';
+import Nav from './nav';
+import Footer from './footer';
+import './index.css';
 
 function App() {
 
@@ -28,14 +30,13 @@ const handlePrev = () => {
 };
 
 const handleNext = () => {
-  if (index < 40) {
+  if (index < 5) {
     setIndex(index + 1);
   }
 };
   return (
-    <>  
-        <header> nav
-        </header>
+    <> 
+      <Nav />
         <main>
         {
         productos.length > 0 ?
@@ -51,10 +52,12 @@ const handleNext = () => {
         </main>
      <div>
       <button disabled={index <= 1} onClick={handlePrev}>◀</button>
-      <button disabled={index >= 40} onClick={handleNext}>▶</button>
+      <button disabled={index >= 5} onClick={handleNext}>▶</button>
      </div>
+     <Footer />
     </>
   )
 }
 
-export default App
+export default App;
+
